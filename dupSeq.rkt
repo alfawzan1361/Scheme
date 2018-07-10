@@ -1,0 +1,6 @@
+;duplicateSeq (Done)
+(define (dup A) 
+    (cond ((null? A) '())
+          ((cons (car A)
+                 (cons (car A)
+                       (dup (cdr A)))))))
